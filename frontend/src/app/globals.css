@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #08080C;
+  --card: #12121A;
+  --card2: #1A1A24;
+  --border: #242433;
+  --accent: #7C5CFF;
+  --accent2: #00E5FF;
+}
+
+* { scrollbar-width: thin; scrollbar-color: #2A2A3A transparent; }
+::-webkit-scrollbar { width: 6px; height: 6px }
+::-webkit-scrollbar-track { background: transparent }
+::-webkit-scrollbar-thumb { background: #2A2A3A; border-radius: 999px }
+
+body {
+  background: var(--bg);
+  color: #F1F1F3;
+  font-family: 'Geist', system-ui, -apple-system, sans-serif;
+}
+
+/* markdown prose */
+.prose { color: #E6E6EA; line-height: 1.7; font-size: 13.5px }
+.prose h1 { font-size: 22px; font-weight: 700; letter-spacing: -0.6px; margin: 18px 0 8px; color: #F1F1F3 }
+.prose h2 { font-size: 16px; font-weight: 700; margin: 16px 0 8px; color: #F1F1F3; border-bottom: 1px solid #242433; padding-bottom: 6px }
+.prose h3 { font-size: 13px; font-weight: 700; margin: 14px 0 6px; color: #B8A6FF; text-transform: uppercase; letter-spacing: 0.06em }
+.prose p { margin: 8px 0 }
+.prose table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 12.5px; display: block; overflow-x: auto; white-space: nowrap; }
+.prose th { background: rgba(124,92,255,0.14); color: #D8D1FF; text-align: left; padding: 8px 10px; border: 1px solid #2A2A3A; font-weight: 600 }
+.prose td { padding: 7px 10px; border: 1px solid #242433; background: rgba(255,255,255,0.02) }
+.prose blockquote { border-left: 2px solid #7C5CFF; padding: 10px 12px; margin: 12px 0; background: rgba(124,92,255,0.06); border-radius: 0 10px 10px 0; color: #9A9AAF }
+.prose code { background: rgba(124,92,255,0.12); padding: 2px 6px; border-radius: 6px; font-family: 'Geist Mono', monospace; font-size: 12px; color: #B8A6FF }
+.prose pre { background: #0E0E14; border: 1px solid #242433; padding: 12px; border-radius: 10px; overflow-x: auto; font-size: 12.5px }
+.prose hr { border: none; height: 1px; background: #242433; margin: 16px 0 }
+.prose ul, .prose ol { padding-left: 18px; margin: 8px 0 }
+.prose li { margin: 4px 0 }
+.prose a { color: #7C5CFF; text-decoration: underline; text-underline-offset: 2px }
+
+/* animations */
+@keyframes pulse-dot { 0%,100%{opacity:1} 50%{opacity:0.5} }
+@keyframes shimmer { 0%{transform:translateX(-100%)} 100%{transform:translateX(100%)} }
