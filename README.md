@@ -3,7 +3,7 @@
 > **The 80% problem, solved.** Data scientists spend 80% of their time cleaning messy PDFs, Excels, and slide decks before AI can read them. ShiftRAG converts any document into clean, markdown-based vectors in milliseconds.
 
 <p align="center">
-  <a href="https://colab.research.google.com/github/YOUR_USERNAME/shiftrag/blob/main/ShiftRAG_Colab.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+  <a href="https://colab.research.google.com/github/ybclo/shiftrag/blob/main/ShiftRAG_Colab.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
   <img src="https://img.shields.io/badge/Stack-FastAPI%20%7C%20Next.js%2014-7C5CFF?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Parsing-Docling%20%28IBM%29-00E5FF?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Vectors-Qdrant%20%2B%20FastEmbed-00E676?style=for-the-badge" />
@@ -96,7 +96,7 @@ npm run dev
 
 Docling's vision models love heavy compute. Colab gives you that for free — and `pyngrok` tunneled public URLs let your **local Next.js UI** talk to Colab's cloud backend.
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/shiftrag/blob/main/ShiftRAG_Colab.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ybclo/shiftrag/blob/main/ShiftRAG_Colab.ipynb)
 
 **One-click steps:**
 
@@ -106,7 +106,7 @@ Docling's vision models love heavy compute. Colab gives you that for free — an
    git add .
    git commit -m "Initial commit: ShiftRAG MVP"
    git branch -M main
-   git remote add origin https://github.com/YOUR_USERNAME/shiftrag.git
+   git remote add origin https://github.com/ybclo/shiftrag.git
    git push -u origin main
    ```
 
