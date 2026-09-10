@@ -1,33 +1,34 @@
-# ShiftRAG — Backend dependencies
-# Core
-fastapi==0.110.2
-uvicorn[standard]==0.29.0
-pydantic==2.7.1
-pydantic-settings==2.2.1
-python-multipart==0.0.9
-aiofiles==23.2.1
-python-dotenv==1.0.1
-httpx==0.27.0
+# ShiftRAG — Backend dependencies (Colab-friendly — flexible versions)
+# Core — no strict pins so Colab's Python 3.11/3.12/3.13 all work
+fastapi
+uvicorn[standard]
+pydantic
+pydantic-settings
+python-multipart
+aiofiles
+python-dotenv
+httpx
 # Colab tunnel (optional — enables Google Colab free-GPU hosting)
-pyngrok==7.1.6
-nest-asyncio==1.6.0
+pyngrok
+nest-asyncio
 
 # Parsing — primary + fallbacks
 # docling is IBM's spatial document parser (layout, tables, OCR).
 # It's large (~1GB with models) — install with care. Fallbacks work if omitted.
-docling==2.8.0
-pypdf==4.2.0
-python-docx==1.1.2
-openpyxl==3.1.2
-python-pptx==0.6.23
-pillow==10.4.0
+# docling — uncomment if you want full vision (optional, heavy):
+# docling
+pypdf
+python-docx
+openpyxl
+python-pptx
+pillow
 
-# Embeddings — local, no API key
-fastembed==0.3.1
-onnxruntime==1.18.0
+# Embeddings — local, no API key (flexible so Colab finds a compatible wheel)
+fastembed
+onnxruntime
 
 # Vector DB — in-memory default (no server needed)
-qdrant-client==1.9.1
+qdrant-client
 
 # Utils
-numpy==1.26.4
+numpy
